@@ -1,0 +1,46 @@
+DEPTH = 256;
+WIDTH = 8;
+CONTENT
+BEGIN
+0:	17; % guardo en Reg7 El numero a saltar %
+1:	03;
+2:	10; % guardo en Reg0 la cantidad de saltos que quiero %
+3:	03;
+4:	13; % asigno a Reg3 la direccion de memoria donde se guardara el resultado %
+5:	0B;
+6:	66; % Elijo la operacino SHL de OPER %
+7:	70; % Corro Reg7 tantos lugares como se indica en Reg0 %
+8:	00;
+9:	00;
+A:	00;
+B:	00;
+C:	00;
+D:	57; % Guardo en la direccion de memoria apuntada por RegFReg3 el valor que hay en Reg7 %
+E:	F3;
+F:	00; 
+10: 00; 
+11: 00;   
+12: 00; 
+13: 00;
+14:	90;  % dejo en loop %
+15: 13;	 
+16: 00;  
+17: 00;  
+18:	00;
+19: 00;  
+1A: 00;
+1B:	00;
+1C: 00; 
+1D: 00; 
+1E: 00; 
+1F: 00; 
+20: 00; 
+21: 00; 
+22: 00; 
+23: 00; 
+24: 00;
+25: 00; 
+26: 00; 
+83: 12;
+
+END ;
